@@ -7,8 +7,8 @@ services:
       - 9292:9292
     external_links:
       - mysql-dev:db
-    volumes:
-      - app_data:/inventory_manager
+#    volumes:
+#      - app_data:/inventory_manager
 
 volumes:
   app_data:

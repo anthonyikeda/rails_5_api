@@ -5,5 +5,4 @@ WORKDIR /inventory_manager
 ADD inventory_manager/Gemfile /inventory_manager/Gemfile
 ADD inventory_manager/Gemfile.lock /inventory_manager/Gemfile.lock
 RUN bundle install
-ADD ./inventory_manager /inventory_manager
-
+COPY inventory_manager/ /inventory_manager

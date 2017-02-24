@@ -8,3 +8,6 @@ docker run --name mysql-dev -v mysql-dev-data:/var/lib/mysql -e MYSQL_ROOT_PASSW
 ```
 
 Then configure your db instance and connect to it over the docker network
+
+# Other
+http://sourcey.com/building-the-prefect-rails-5-api-only-app/
