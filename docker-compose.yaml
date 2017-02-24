@@ -1,19 +1,21 @@
-version: "2"
+version: "3"
 services:
-  db:
-    build:
-      context: database
-      dockerfile: Dockerfile
-    ports:
-      - 3306:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: mypassword
   web:
     build: .
     command: puma -b tcp://0.0.0.0:9292
     ports:
       - 9292:9292
-    links:
-      - db
+    external_links:
+      - mysql-dev:db
     volumes:
-      - /Users/anthonyikeda/work/git_cloud/docker_rails_blog_api/inventory_manager:/inventory_manager
+      - app_data:/inventory_manager
+
+volumes:
+  app_data:
+    external:
+      name: app-dev-data
+
+networks:
+  default:
+    external:
+      name: cloud-dev
