@@ -14,21 +14,20 @@ default: &default
 development:
   <<: *default
   database: inventory_manager_dev
-  username: root
-  password: mypassword
+  username: im_user
+  password: aB6yog4Quex5
   host: db
 
 test:
   <<: *default
   database: inventory_manager_test
-  username: root
-  password: mypassword
+  username: im_user
+  password: aB6yog4Quex5
   host: db
 
 production:
   <<: *default
   database: inventory_manager
-  username: root
-  password: mypassword
+  username: im_user
+  password: aB6yog4Quex5
   host: db
-
