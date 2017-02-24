@@ -1,0 +1,15 @@
+source 'https://rubygems.org'
+
+
+gem 'rails', '~> 5.0.1'
+
+gem 'spring', :group => :development
+
+gem 'sqlite3'
+
+gem 'listen', :group => :development
+
+gem 'byebug', :groups => [:development, :test]
+
+
+
