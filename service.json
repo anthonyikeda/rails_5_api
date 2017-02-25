@@ -1,0 +1,7 @@
+{
+  "service" : {
+    "name" : "rails-5-api",
+    "tags" : ["rails"],
+    "port" : 9292
+  }
+}
