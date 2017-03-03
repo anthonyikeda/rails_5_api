@@ -1,0 +1,12 @@
+{
+  "server" : false,
+  "datacenter" : "DC1",
+  "data_dir" : "/var/consul",
+  "log_level" : "INFO",
+  "start_join" : [ "consul" ],
+  "service" : {
+    "name" : "client_1",
+    "tags" : ["client", "sample", "microservice"],
+    "port" : 9292
+  }
+}
