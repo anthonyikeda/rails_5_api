@@ -1,0 +1,16 @@
+{
+  "path": {
+    "secret/rails/inventory_manager" : {
+      "capabilities" : ["create", "update", "list", "read", "delete"]
+    },
+    "secret/rails/inventory_manager/*" : {
+      "capabilities" : ["create", "update", "list", "read", "delete"]
+    },
+    "secret/rails/inventory_manager/development" : {
+      "capabilities" : ["create", "update", "list", "read", "delete"]
+    },
+    "secret/rails/inventory_manager/development/*" : {
+      "capabilities" : ["create", "update", "list", "read", "delete"]
+    }
+  }
+}
